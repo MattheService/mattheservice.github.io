@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthe Service | Equipos industriales y servicios</title>
+  <meta name="description" content="Proveedor de equipos industriales y servicios: controles remotos inalámbricos para grúas y maquinaria, filtros de aire HEPA, de bolsa y plisados, y repuestos para montacargas, mini excavadoras y equipos viales. Cotizá por WhatsApp.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="#inicio" class="logo"><img src="img/logo-matthe.png" alt="Matthe Service – Excelencia y confiabilidad en un solo lugar"></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#lineas">Productos</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PORTADA ===== -->
+  <section class="portada" id="inicio">
+    <div class="contenedor">
+      <span class="lema">Excelencia y confiabilidad en un solo lugar</span>
+      <h1>Proveedor de <span>equipos industriales</span> y servicios</h1>
+      <p>Controles remotos inalámbricos para grúas y maquinaria, filtros de aire industriales, repuestos para montacargas, mini excavadoras y equipos viales, y el servicio técnico para que todo funcione.</p>
+      <div class="acciones">
+        <a href="#catalogo" class="boton">Ver catálogo</a>
+        <a href="https://wa.me/595984371433?text=Hola%2C%20quiero%20hacer%20una%20consulta%20sobre%20sus%20equipos%20y%20servicios." class="boton boton-wa" target="_blank" rel="noopener">Pedir cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LÍNEAS DE PRODUCTOS ===== -->
+  <section id="lineas">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Nuestras líneas</h2>
+        <p>Todo lo que tu planta necesita, con un solo proveedor</p>
+      </div>
+      <div class="lineas">
+        <a href="#catalogo" class="linea-card" onclick="document.getElementById('cat-ctrl').checked=true">
+          <img src="img/linea-productos.webp" alt="Controles remotos industriales">
+          <div>
+            <h3>Controles remotos industriales</h3>
+            <p>Mandos inalámbricos de 2 a 20 botones, joysticks y consolas a medida para polipastos, puentes grúa y grúas sobre camión. Alimentación de 12 V a 220 V AC/DC.</p>
+            <span class="ver">Ver controles →</span>
+          </div>
+        </a>
+        <a href="#catalogo" class="linea-card" onclick="document.getElementById('cat-fil').checked=true">
+          <img src="img/collage-filtros.webp" alt="Filtros de aire industriales">
+          <div>
+            <h3>Filtros de aire</h3>
+            <p>Filtros HEPA, de bolsa, plisados y compactos para HVAC, salas limpias, industria alimenticia, farmacéutica y procesos con alta temperatura.</p>
+            <span class="ver">Ver filtros →</span>
+          </div>
+        </a>
+        <a href="#catalogo" class="linea-card" onclick="document.getElementById('cat-rep').checked=true">
+          <img src="img/collage-montacargas.webp" alt="Repuestos para montacargas y maquinaria">
+          <div>
+            <h3>Repuestos para maquinaria</h3>
+            <p>Repuestos alternativos para montacargas (motor Nissan K21, pernos de rueda, interruptores, pasadores), mini excavadoras y otros equipos viales.</p>
+            <span class="ver">Ver repuestos →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section id="catalogo">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Catálogo de productos</h2>
+        <p>Elegí una categoría y consultá precio y disponibilidad por WhatsApp</p>
+      </div>
+
+      <div class="filtro">
+        <!-- Botones para filtrar por categoría (funcionan solo con CSS) -->
+        <input type="radio" name="cat" id="cat-todos" checked>
+        <input type="radio" name="cat" id="cat-f21">
+        <input type="radio" name="cat" id="cat-f24">
+        <input type="radio" name="cat" id="cat-ml">
+        <input type="radio" name="cat" id="cat-joy">
+        <input type="radio" name="cat" id="cat-ctrl">
+        <input type="radio" name="cat" id="cat-fil">
+        <input type="radio" name="cat" id="cat-rep">
+        <div class="categorias">
+          <label for="cat-todos">Todos</label>
+          <label for="cat-ctrl">Controles remotos</label>
+          <label for="cat-fil">Filtros de aire</label>
+          <label for="cat-rep">Repuestos para maquinaria</label>
+          <label for="cat-f21">Controles F21</label>
+          <label for="cat-f24">Controles F23 / F24</label>
+          <label for="cat-ml">Controles IP65/IP66 y kits</label>
+          <label for="cat-joy">Joystick y a medida</label>
+        </div>
+
+        <div class="catalogo">
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f21">
+          <img src="img/f21-e1b.jpg" alt="Control inalámbrico de 6 botones modelo F21-E1B" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F21</span>
+            <h3>Control inalámbrico de 6 botones</h3>
+            <span class="modelo">Modelo F21-E1B</span>
+            <p>Botonera compacta para polipastos y puentes grúa: subir, bajar, este, oeste, norte, sur y arranque/parada.</p>
+            <ul class="specs">
+              <li>Mando 210 × 70 mm · receptor 210 × 80 mm</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+              <li>Certificado CE y FCC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F21-E1B%20%28Control%20inal%C3%A1mbrico%20de%206%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f21">
+          <img src="img/f21-4s.jpg" alt="Control inalámbrico de 4 botones modelo F21-4S" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F21</span>
+            <h3>Control inalámbrico de 4 botones</h3>
+            <span class="modelo">Modelo F21-4S</span>
+            <p>Mando liviano con parada de emergencia tipo hongo y llave de arranque. Ideal para polipastos de dos movimientos.</p>
+            <ul class="specs">
+              <li>Mando 205 × 57 mm</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+              <li>Frecuencia 315 / 433 / 868 MHz</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F21-4S%20%28Control%20inal%C3%A1mbrico%20de%204%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f21">
+          <img src="img/f21-2s.jpg" alt="Control inalámbrico de 2 botones modelo F21-2S" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F21</span>
+            <h3>Control inalámbrico de 2 botones</h3>
+            <span class="modelo">Modelo F21-2S</span>
+            <p>La solución más simple para subir y bajar: polipastos eléctricos, montacargas y portones.</p>
+            <ul class="specs">
+              <li>Mando 130 × 45 mm</li>
+              <li>Receptor compacto 90 × 90 mm</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Material ABS de alta resistencia</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F21-2S%20%28Control%20inal%C3%A1mbrico%20de%202%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f21">
+          <img src="img/f21-e2b-8.jpg" alt="Control inalámbrico de 8 botones modelo F21-E2B-8" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F21</span>
+            <h3>Control inalámbrico de 8 botones</h3>
+            <span class="modelo">Modelo F21-E2B-8</span>
+            <p>Ocho funciones de una velocidad con botones de arranque y parada, para grúas y equipos de elevación.</p>
+            <ul class="specs">
+              <li>Mando 160 × 70 mm · receptor 212 × 80 mm</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Frecuencia 868 MHz</li>
+              <li>Certificado CE y FCC</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F21-E2B-8%20%28Control%20inal%C3%A1mbrico%20de%208%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f21">
+          <img src="img/f21-t2s.jpg" alt="Control para motor con botonera de cable modelo F21-T2S" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F21</span>
+            <h3>Control para motor con botonera de cable</h3>
+            <span class="modelo">Modelo F21-T2S</span>
+            <p>Incluye mando inalámbrico y botonera con cable. El receptor se conecta directo al motor (U, V, W).</p>
+            <ul class="specs">
+              <li>Mando 130 × 55 mm · botonera con cable 127 × 73 mm</li>
+              <li>Alcance 150 / 250 m</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+              <li>Resistente al agua, al polvo y a caídas</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F21-T2S%20%28Control%20para%20motor%20con%20botonera%20de%20cable%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f24">
+          <img src="img/f23-10s.jpg" alt="Control inalámbrico de 10 botones modelo F23-10S+" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F23</span>
+            <h3>Control inalámbrico de 10 botones</h3>
+            <span class="modelo">Modelo F23-10S+</span>
+            <p>Carcasa de nylon con 30 % de fibra de vidrio, pensada para trabajo pesado a la intemperie.</p>
+            <ul class="specs">
+              <li>Mando 175 × 60 mm · receptor 190 × 160 mm</li>
+              <li>Alcance 150 / 250 m</li>
+              <li>Protección IP65</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F23-10S%2B%20%28Control%20inal%C3%A1mbrico%20de%2010%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f24">
+          <img src="img/f24-s.jpg" alt="Controles de 8, 10 y 12 botones modelo F24-8S / 10S / 12S" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F24</span>
+            <h3>Controles de 8, 10 y 12 botones</h3>
+            <span class="modelo">Modelo F24-8S / 10S / 12S</span>
+            <p>Botoneras largas para puentes grúa y grúas pórtico, con parada de emergencia y llave de arranque.</p>
+            <ul class="specs">
+              <li>Mando 235 × 47 mm · receptor 323 × 155 mm</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Una velocidad</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F24-8S%20/%2010S%20/%2012S%20%28Controles%20de%208%2C%2010%20y%2012%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f24">
+          <img src="img/f24-d.jpg" alt="Controles de dos velocidades modelo F24-8D / 10D / 12D" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F24</span>
+            <h3>Controles de dos velocidades</h3>
+            <span class="modelo">Modelo F24-8D / 10D / 12D</span>
+            <p>Mismo formato que la serie F24, con botones de doble paso para movimientos lentos y rápidos.</p>
+            <ul class="specs">
+              <li>Mando 235 × 47 mm · receptor 323 × 155 mm</li>
+              <li>Dos velocidades</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Frecuencia 433 MHz</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F24-8D%20/%2010D%20/%2012D%20%28Controles%20de%20dos%20velocidades%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl f24">
+          <img src="img/f24-20s.jpg" alt="Controles de 14 a 20 botones modelo F24-14S a F24-20S" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie F24</span>
+            <h3>Controles de 14 a 20 botones</h3>
+            <span class="modelo">Modelo F24-14S a F24-20S</span>
+            <p>Para grúas con muchas funciones: varios ganchos, imanes, luces o accesorios en un solo mando.</p>
+            <ul class="specs">
+              <li>14, 16, 18 o 20 botones</li>
+              <li>Mando de 280 a 325 mm de largo</li>
+              <li>Parada de emergencia tipo hongo</li>
+              <li>Llave de arranque</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F24-14S%20a%20F24-20S%20%28Controles%20de%2014%20a%2020%20botones%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl ml">
+          <img src="img/ml-k8.jpg" alt="Control de 8 botones IP66 modelo ML-K8+" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie ML</span>
+            <h3>Control de 8 botones IP66</h3>
+            <span class="modelo">Modelo ML-K8+</span>
+            <p>Parada de emergencia tipo hongo y opción de batería de litio incorporada. Funciona en frío o calor extremos.</p>
+            <ul class="specs">
+              <li>Mando 195 × 65 mm · receptor 210 × 97 mm</li>
+              <li>Alcance 150 / 250 m</li>
+              <li>Protección IP66 · de -40 °C a 85 °C</li>
+              <li>Pila AA o batería de litio</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20ML-K8%2B%20%28Control%20de%208%20botones%20IP66%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl ml">
+          <img src="img/ml-p8.jpg" alt="Control de 8 botones IP65 modelo ML-P8+" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Serie ML</span>
+            <h3>Control de 8 botones IP65</h3>
+            <span class="modelo">Modelo ML-P8+</span>
+            <p>Mando ergonómico y receptor con tapa transparente para ver el estado y diagnosticar fallas rápido.</p>
+            <ul class="specs">
+              <li>Mando 145 × 60 mm · receptor 215 × 97 mm</li>
+              <li>Alcance 150 / 250 m</li>
+              <li>Protección IP65 · de -40 °C a 85 °C</li>
+              <li>Nylon con 30 % de fibra de vidrio</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20ML-P8%2B%20%28Control%20de%208%20botones%20IP65%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl ml">
+          <img src="img/ld-bc6.jpg" alt="Kit de 6 botones con placa de relés modelo LD-BC6" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Kit con placa de relés</span>
+            <h3>Kit de 6 botones con placa de relés</h3>
+            <span class="modelo">Modelo LD-BC6</span>
+            <p>Receptor compacto tipo placa, fácil de integrar en tableros, portones y maquinaria liviana.</p>
+            <ul class="specs">
+              <li>Mando 135 × 53 mm · receptor 125 × 110 mm</li>
+              <li>Alcance 150 / 250 m</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+              <li>De -35 °C a 75 °C</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20LD-BC6%20%28Kit%20de%206%20botones%20con%20placa%20de%20rel%C3%A9s%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl joy">
+          <img src="img/f24-60.jpg" alt="Consola con dos joysticks modelo F24-60" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Joystick</span>
+            <h3>Consola con dos joysticks</h3>
+            <span class="modelo">Modelo F24-60</span>
+            <p>Dos palancas de 5 velocidades para un manejo preciso de grúas puente, pórticos y grúas torre.</p>
+            <ul class="specs">
+              <li>Consola 110 × 215 mm · receptor 345 × 250 mm</li>
+              <li>Dos joysticks de 5 velocidades</li>
+              <li>Alcance hasta 100 m</li>
+              <li>Versión Pro disponible</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20F24-60%20%28Consola%20con%20dos%20joysticks%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl joy">
+          <img src="img/joystick.jpg" alt="Consola personalizada para grúas sobre camión modelo Consola a medida" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">A medida</span>
+            <h3>Consola personalizada para grúas sobre camión</h3>
+            <span class="modelo">Modelo Consola a medida</span>
+            <p>Se arma según tu máquina: joysticks, botones, potenciómetros y salidas analógicas o de contacto.</p>
+            <ul class="specs">
+              <li>Hasta 2 joysticks en cruz</li>
+              <li>Pulsadores, selectores y potenciómetro</li>
+              <li>Salida analógica o de contacto</li>
+              <li>Parada de emergencia</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20Consola%20a%20medida%20%28Consola%20personalizada%20para%20gr%C3%BAas%20sobre%20cami%C3%B3n%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- PRODUCTO: copiá este bloque <article> para agregar otro -->
+        <article class="producto ctrl joy">
+          <img src="img/pantalla.jpg" alt="Control portátil con pantalla modelo Control con pantalla" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">A medida</span>
+            <h3>Control portátil con pantalla</h3>
+            <span class="modelo">Modelo Control con pantalla</span>
+            <p>Mando de alta gama con pantalla para ver el estado y la velocidad. Los botones se definen según tu equipo.</p>
+            <ul class="specs">
+              <li>Pantalla de estado y ajuste de velocidad</li>
+              <li>Alcance de 100 a 150 m con antena extendida</li>
+              <li>Comunicación RS485 / CAN / 232 opcional</li>
+              <li>De -35 °C a 70 °C</li>
+              <li>Alimentación de 12 V a 220 V AC/DC</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20modelo%20Control%20con%20pantalla%20%28Control%20port%C3%A1til%20con%20pantalla%29." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-plisado.jpg" alt="Filtro plisado – Prefiltro" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Prefiltro</span>
+            <h3>Filtro plisado</h3>
+            <p>Prefiltro con medio sintético plisado y marco de cartón resistente a la humedad. Los pliegues le dan mucha más superficie que un filtro plano.</p>
+            <p class="uso"><b>Ideal para:</b> Primera etapa de equipos de aire acondicionado, UTAs y ventilación de edificios, fábricas y depósitos.</p>
+            <ul class="specs">
+              <li>Eficiencia típica MERV 8 / G4 (ISO Coarse)</li>
+              <li>Retiene polvo grueso, pelusas y polen</li>
+              <li>Protege y alarga la vida de los filtros finos y HEPA</li>
+              <li>Bajo costo y medidas estándar de 1", 2" y 4"</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20plisado.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-bolsa.jpg" alt="Filtro de bolsa – Filtración media y fina" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Filtración media y fina</span>
+            <h3>Filtro de bolsa</h3>
+            <p>Filtro multibolsa con bolsillos de medio sintético cosidos o soldados a un marco metálico. Ofrece gran superficie filtrante en poco espacio frontal.</p>
+            <p class="uso"><b>Ideal para:</b> Segunda etapa en UTAs de hospitales, centros comerciales, oficinas, industria alimenticia y plantas industriales.</p>
+            <ul class="specs">
+              <li>Eficiencias de M5 a F9 (ISO ePM10 a ePM1)</li>
+              <li>Alta capacidad de retención de polvo</li>
+              <li>Baja pérdida de carga y larga vida útil</li>
+              <li>Fácil de cambiar, bajo costo por m³ de aire</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20de%20bolsa.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-flow.jpg" alt="Filtro Flow – Celda rígida" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Celda rígida</span>
+            <h3>Filtro Flow</h3>
+            <p>Filtro de celda rígida con medio plisado profundo dentro de una caja metálica, reforzado con soportes en diagonal.</p>
+            <p class="uso"><b>Ideal para:</b> Filtro final en sistemas HVAC con caudales altos o aire turbulento, o como etapa previa al HEPA.</p>
+            <ul class="specs">
+              <li>Eficiencias típicas MERV 11 a 14</li>
+              <li>Estructura rígida que no colapsa con caudal alto</li>
+              <li>Soporta humedad y flujo turbulento</li>
+              <li>Mayor vida útil que un filtro de panel</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20Flow.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-c-vell.jpg" alt="Filtro C Vell – Compacto en V (V-Bank)" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Compacto en V (V-Bank)</span>
+            <h3>Filtro C Vell</h3>
+            <p>Filtro compacto con paquetes de medio minipliegue en forma de "V" dentro de un marco plástico rígido.</p>
+            <p class="uso"><b>Ideal para:</b> UTAs de hospitales, laboratorios, data centers, aeropuertos y edificios con certificación de calidad de aire.</p>
+            <ul class="specs">
+              <li>Eficiencias MERV 11 a 15 (ISO ePM1)</li>
+              <li>Máxima superficie filtrante en el mismo tamaño</li>
+              <li>Baja pérdida de carga: menor consumo eléctrico</li>
+              <li>Liviano, sin bolsas que se deformen</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20C%20Vell.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-cell.jpg" alt="Filtro Cell – Panel minipliegue" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Panel minipliegue</span>
+            <h3>Filtro Cell</h3>
+            <p>Panel delgado de medio minipliegue con marco de aluminio. Alta eficiencia en muy poca profundidad.</p>
+            <p class="uso"><b>Ideal para:</b> Equipos compactos: fan coils, cabinas, purificadores de aire, equipos de proceso y salidas de aire.</p>
+            <ul class="specs">
+              <li>Medio minipliegue de fibra de vidrio o sintético</li>
+              <li>Marco de aluminio liviano y resistente</li>
+              <li>Ideal donde hay poco espacio</li>
+              <li>Versiones de filtración fina a EPA/HEPA</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20Cell.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-hepa.jpg" alt="Filtro HEPA – Filtro absoluto" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Filtro absoluto</span>
+            <h3>Filtro HEPA</h3>
+            <p>Filtro absoluto de pliegue profundo con separadores de aluminio dentro de una caja metálica.</p>
+            <p class="uso"><b>Ideal para:</b> Salas limpias, quirófanos, industria farmacéutica y alimenticia, laboratorios y electrónica.</p>
+            <ul class="specs">
+              <li>Retiene como mínimo el 99,97 % de las partículas de 0,3 µm</li>
+              <li>Clases H13 y H14 según EN 1822</li>
+              <li>Retiene bacterias, esporas y polvo fino</li>
+              <li>Profundidad estándar de 292 mm</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20HEPA.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-hepa-hc.jpg" alt="Filtro HEPA HC – HEPA de alta capacidad" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · HEPA de alta capacidad</span>
+            <h3>Filtro HEPA HC</h3>
+            <p>Versión HEPA de caja profunda con más superficie de medio filtrante, para mayor caudal y más vida útil.</p>
+            <p class="uso"><b>Ideal para:</b> Sistemas de inyección de aire a salas limpias y procesos críticos con caudales altos.</p>
+            <ul class="specs">
+              <li>Eficiencia HEPA H13/H14</li>
+              <li>Mayor caudal con la misma medida frontal</li>
+              <li>Menor pérdida de carga y menos recambios</li>
+              <li>Marco metálico robusto</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20HEPA%20HC.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-hpa-lfa.jpg" alt="Filtro HPA LFA – HEPA para flujo laminar" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · HEPA para flujo laminar</span>
+            <h3>Filtro HPA LFA</h3>
+            <p>Panel HEPA minipliegue de bajo espesor con marco de aluminio. Entrega un flujo de aire uniforme y unidireccional.</p>
+            <p class="uso"><b>Ideal para:</b> Campanas y cabinas de flujo laminar, módulos de techo de salas limpias y cabinas de seguridad biológica.</p>
+            <ul class="specs">
+              <li>Eficiencia H13/H14</li>
+              <li>Bajo espesor (unos 69 mm), fácil de instalar en techos y módulos</li>
+              <li>Flujo uniforme sobre toda la superficie</li>
+              <li>Junta de poliuretano o de gel según el equipo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20HPA%20LFA.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO -->
+        <article class="producto fil">
+          <img src="img/filtro-hepa-hvht.jpg" alt="Filtro HEPA HVHT – Alto caudal y alta temperatura" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros de aire · Alto caudal y alta temperatura</span>
+            <h3>Filtro HEPA HVHT</h3>
+            <p>Filtro HEPA de alto caudal con paquetes en V dentro de una caja metálica con manija, para procesos con aire caliente.</p>
+            <p class="uso"><b>Ideal para:</b> Túneles de despirogenización y hornos farmacéuticos, secadores de la industria alimenticia y cabinas de pintura.</p>
+            <ul class="specs">
+              <li>Eficiencia HEPA en procesos con aire caliente</li>
+              <li>Muy alto caudal con baja pérdida de carga</li>
+              <li>Marco metálico y sellos resistentes al calor</li>
+              <li>Consultá la temperatura máxima de cada modelo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20cotizar%20el%20Filtro%20HEPA%20HVHT.%20Medidas%20que%20necesito%3A%20" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- FILTRO / AIRE COMPRIMIDO -->
+        <article class="producto fil">
+          <img src="img/silenciador-neumatico.jpg" alt="Silenciador de escape neumático de 1/2 pulgada" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Filtros · Aire comprimido</span>
+            <h3>Silenciador de escape neumático</h3>
+            <p>Silenciador con cuerpo metálico y malla perforada para la salida de aire de válvulas, cilindros y equipos neumáticos.</p>
+            <p class="uso"><b>Ideal para:</b> escapes de válvulas neumáticas, purgas de compresores, secadores de aire y máquinas con aire comprimido.</p>
+            <ul class="specs">
+              <li>Menos ruido en la salida de aire comprimido</li>
+              <li>Cuerpo metálico con malla perforada</li>
+              <li>Rosca macho de 1/2"</li>
+              <li>Entrega inmediata</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20el%20Silenciador%20de%20escape%20neum%C3%A1tico%201/2%22.%20%C2%BFTienen%20disponible%3F" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-piston-k21.jpg" alt="Juego de pistones Nissan K21" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Juego de pistones Nissan K21</h3>
+            <span class="modelo">Medida 0,50 mm · Repuesto alternativo</span>
+            <p>Pistones con perno para motores Nissan K21 rectificados, la medida que se usa después de rectificar los cilindros.</p>
+            <ul class="specs">
+              <li>Medida 0,50 mm (sobremedida)</li>
+              <li>Juego para los 4 cilindros, con pernos</li>
+              <li>Para montacargas con motor Nissan K21 (Nissan, TCM, Caterpillar, Komatsu y otros)</li>
+              <li>Repuesto alternativo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Juego%20de%20pistones%20Nissan%20K21%20%28Medida%200%2C50%20mm%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-aros-k21.jpg" alt="Juego de aros Nissan K21" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Juego de aros Nissan K21</h3>
+            <span class="modelo">Medida 0,50 mm · Repuesto alternativo</span>
+            <p>Juego de aros de compresión y de aceite para pistones de motor Nissan K21 en medida 0,50.</p>
+            <ul class="specs">
+              <li>Medida 0,50 mm</li>
+              <li>Aros de compresión y de control de aceite</li>
+              <li>Para los 4 cilindros</li>
+              <li>Repuesto alternativo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Juego%20de%20aros%20Nissan%20K21%20%28Medida%200%2C50%20mm%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-juntas-k21.jpg" alt="Juego de juntas motor Nissan K21" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Juego de juntas motor Nissan K21</h3>
+            <span class="modelo">Medida 0,50 mm · Repuesto alternativo</span>
+            <p>Juego completo de juntas para reparar o rectificar el motor Nissan K21 de tu montacargas.</p>
+            <ul class="specs">
+              <li>Para motor K21 en medida 0,50</li>
+              <li>Junta de tapa de cilindros, múltiples y tapa de válvulas</li>
+              <li>Junta de cárter, retenes y sellos de válvula</li>
+              <li>Repuesto alternativo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Juego%20de%20juntas%20motor%20Nissan%20K21%20%28Medida%200%2C50%20mm%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-perno-rueda.jpg" alt="Perno y tuerca de rueda trasera" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Perno y tuerca de rueda trasera</h3>
+            <span class="modelo">M14 × 1,50 · Repuesto alternativo</span>
+            <p>Perno de rueda con tuerca para la rueda trasera de montacargas.</p>
+            <ul class="specs">
+              <li>Rosca M14 × 1,50</li>
+              <li>Largo 51 mm</li>
+              <li>Tuerca incluida</li>
+              <li>Cuello estriado de ajuste firme</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Perno%20y%20tuerca%20de%20rueda%20trasera%20%28M14%20%C3%97%201%2C50%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-interruptor-parada.jpg" alt="Interruptor de parada de emergencia" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Interruptor de parada de emergencia</h3>
+            <span class="modelo">250 A · Repuesto alternativo</span>
+            <p>Interruptor tipo hongo que corta la batería al instante con un solo golpe.</p>
+            <ul class="specs">
+              <li>Soporta hasta 250 amperios</li>
+              <li>Bornes de cobre con tornillería</li>
+              <li>Para montacargas, paleteras y apiladoras eléctricas</li>
+              <li>Repuesto alternativo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Interruptor%20de%20parada%20de%20emergencia%20%28250%20A%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO MONTACARGAS -->
+        <article class="producto rep">
+          <img src="img/rep-pasador-tope.jpg" alt="Kit pasador de tope de horquilla" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Kit pasador de tope de horquilla</h3>
+            <span class="modelo">Kit completo · Repuesto alternativo</span>
+            <p>Mantiene las horquillas del montacargas bien trabadas en su lugar.</p>
+            <ul class="specs">
+              <li>Perilla moleteada y pasador</li>
+              <li>Resorte y pasador elástico incluidos</li>
+              <li>Kit completo, listo para instalar</li>
+              <li>Repuesto alternativo</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%3A%20Kit%20pasador%20de%20tope%20de%20horquilla%20%28Kit%20completo%29." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO -->
+        <article class="producto rep">
+          <img src="img/rep-montacargas.svg" alt="Repuestos para montacargas" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Montacargas</span>
+            <h3>Repuestos para montacargas</h3>
+            <p>Repuestos para autoelevadores eléctricos, a gas y diésel.</p>
+            <ul class="specs">
+              <li>Filtros, frenos y embragues</li>
+              <li>Ruedas y neumáticos macizos</li>
+              <li>Horquillas, cadenas y rodillos de mástil</li>
+              <li>Bombas y cilindros hidráulicos</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20busco%20repuestos%20para%20montacargas.%20Marca%20y%20modelo%20del%20equipo%3A%20" target="_blank" rel="noopener">Consultar repuesto</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO -->
+        <article class="producto rep">
+          <img src="img/rep-miniexcavadora.svg" alt="Repuestos para mini excavadoras" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Mini excavadoras</span>
+            <h3>Repuestos para mini excavadoras</h3>
+            <p>Repuestos para mantener tu mini excavadora trabajando.</p>
+            <ul class="specs">
+              <li>Orugas de goma y tren de rodaje</li>
+              <li>Dientes y cuchillas de balde</li>
+              <li>Bulones, bujes y pasadores</li>
+              <li>Kits de sellos y mangueras hidráulicas</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20busco%20repuestos%20para%20mini%20excavadoras.%20Marca%20y%20modelo%20del%20equipo%3A%20" target="_blank" rel="noopener">Consultar repuesto</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO -->
+        <article class="producto rep">
+          <img src="img/rep-vial.svg" alt="Repuestos para equipos viales" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Equipos viales</span>
+            <h3>Repuestos para equipos viales</h3>
+            <p>Repuestos para retroexcavadoras, minicargadoras, rodillos compactadores, motoniveladoras y otras máquinas viales.</p>
+            <ul class="specs">
+              <li>Cuchillas y cantoneras</li>
+              <li>Componentes de tren de rodaje</li>
+              <li>Filtros de motor, aceite y combustible</li>
+              <li>Piezas eléctricas y de cabina</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20busco%20repuestos%20para%20equipos%20viales.%20Marca%20y%20modelo%20del%20equipo%3A%20" target="_blank" rel="noopener">Consultar repuesto</a>
+          </div>
+        </article>
+
+        <!-- REPUESTO -->
+        <article class="producto rep">
+          <img src="img/rep-hidraulica.svg" alt="Hidráulica y motor" loading="lazy">
+          <div class="producto-info">
+            <span class="etiqueta">Repuestos · Hidráulica y motor</span>
+            <h3>Hidráulica y motor</h3>
+            <p>Componentes que comparten muchas máquinas pesadas.</p>
+            <ul class="specs">
+              <li>Bombas, motores y válvulas hidráulicas</li>
+              <li>Cilindros y kits de reparación</li>
+              <li>Juntas, retenes y o-rings</li>
+              <li>Correas, radiadores y arranques</li>
+            </ul>
+            <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20busco%20hidr%C3%A1ulica%20y%20motor.%20Marca%20y%20modelo%20del%20equipo%3A%20" target="_blank" rel="noopener">Consultar repuesto</a>
+          </div>
+        </article>
+
+        </div>
+        <!-- Guía: qué filtro necesito -->
+        <div class="guia-filtros">
+          <strong>¿Qué filtro necesito?</strong> En la mayoría de las instalaciones el aire pasa por etapas:
+          <ol>
+            <li><b>Prefiltro</b> (plisado): retiene el polvo grueso y protege a los demás filtros.</li>
+            <li><b>Filtración media o fina</b> (bolsa, Flow, C Vell, Cell): retiene partículas finas, polen y hollín.</li>
+            <li><b>Filtro absoluto</b> (HEPA, HEPA HC, HPA LFA, HVHT): solo donde se necesita aire ultra limpio, como en salas limpias, quirófanos o procesos farmacéuticos.</li>
+          </ol>
+          Mandanos por WhatsApp las <b>medidas</b> (ancho × alto × profundidad) y el <b>uso</b>, y te recomendamos la combinación correcta.
+        </div>
+        <!-- Aviso: cómo pedir un repuesto -->
+        <div class="aviso-repuestos">
+          <strong>¿Cómo pedir tu repuesto?</strong> Escribinos por WhatsApp con la <b>marca, el modelo y el número de serie</b> de tu equipo, y si podés una <b>foto de la pieza</b> o su código. Te respondemos con precio y disponibilidad.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Servicios</h2>
+        <p>No solo vendemos el equipo: te acompañamos antes y después de la compra</p>
+      </div>
+      <div class="ventajas">
+        <div class="ventaja blanca"><div class="icono">🔌</div><h3>Instalación de controles</h3><p>Conexión del receptor a tu grúa o máquina y prueba de funcionamiento.</p></div>
+        <div class="ventaja blanca"><div class="icono">🛠️</div><h3>Reparación y repuestos</h3><p>Diagnóstico de fallas, cambio de mandos, receptores y repuestos.</p></div>
+        <div class="ventaja blanca"><div class="icono">🌬️</div><h3>Recambio de filtros</h3><p>Reemplazo programado de filtros en equipos HVAC y salas limpias.</p></div>
+        <div class="ventaja blanca"><div class="icono">📋</div><h3>Búsqueda de repuestos</h3><p>Conseguimos la pieza exacta para tu montacargas o máquina vial.</p></div>
+        <div class="ventaja blanca"><div class="icono">📋</div><h3>Asesoramiento técnico</h3><p>Te ayudamos a elegir el control, filtro o repuesto correcto.</p></div>
+      </div>
+      <p style="text-align:center;margin-top:30px"><a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%20un%20servicio%20t%C3%A9cnico." target="_blank" rel="noopener">Consultar un servicio</a></p>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="nosotros" id="nosotros">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Un proveedor confiable para tu industria</p>
+      </div>
+      <div class="ventajas">
+        <div class="ventaja"><div class="icono">🛡️</div><h3>Garantía</h3><p>Productos con garantía y respaldo de fábrica.</p></div>
+        <div class="ventaja"><div class="icono">✅</div><h3>Calidad certificada</h3><p>Controles con certificación CE y FCC, y modelos IP65/IP66.</p></div>
+        <div class="ventaja"><div class="icono">🔧</div><h3>Un solo proveedor</h3><p>Controles, filtros, repuestos y servicio técnico en un mismo lugar.</p></div>
+        <div class="ventaja"><div class="icono">⚙️</div><h3>A tu medida</h3><p>Fabricamos consolas con los botones y joysticks que necesita tu máquina.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Contacto</h2>
+        <p>Contanos qué necesitás y te enviamos una cotización</p>
+      </div>
+      <div class="datos">
+        <span>📍 Minga Guazú, km 16 – Acaray</span>
+        <span>📞 0984 371 433</span>
+        <span>✉️ mattheservice@gmail.com</span>
+        <span>🕗 Lun a Vie 8:00–18:00</span>
+      </div>
+      <div class="acciones-contacto">
+        <a class="boton boton-wa" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%20controles%20remotos%20industriales." target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+        <a class="boton boton-fb" href="https://www.facebook.com/share/1CTpqgHNYn/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.3 2 10 3.6 10 6.2V8H8v3h2v11h4V11h2.7l.3-3H14z"/></svg> Seguinos en Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PIE ===== -->
+  <footer class="pie">
+    <img src="img/logo-matthe-blanco.png" alt="Matthe Service" class="logo-pie">
+    <a class="fb-pie" href="https://www.facebook.com/share/1CTpqgHNYn/" target="_blank" rel="noopener" aria-label="Facebook de Matthe Service"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.3 2 10 3.6 10 6.2V8H8v3h2v11h4V11h2.7l.3-3H14z"/></svg> Facebook</a>
+    <p>© 2026 Matthe Service – Equipos industriales y servicios. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+  <!-- Número de WhatsApp: 595984371433 (código de país + número, sin +, espacios ni 0 inicial) -->
+  <a class="whatsapp-flotante" href="https://wa.me/595984371433?text=Hola%2C%20quiero%20consultar%20por%20controles%20remotos%20industriales." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8C29 8.7 23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.9 4.8-10.6 10.8-10.6s10.8 4.8 10.8 10.6c-.1 5.9-4.9 10.6-10.9 10.6zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+</body>
+</html>
